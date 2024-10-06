@@ -1,0 +1,19 @@
+/* CSS footer */
+.footer {
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+
+    a {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        transition: 0.3s;
+    }
+}
+    

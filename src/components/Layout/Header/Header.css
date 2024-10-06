@@ -1,0 +1,85 @@
+/* CSS header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+.popup-content {
+    background: transparent !important;
+    border: none !important;
+    width: unset !important;
+    padding: 0 !important;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo-box {
+    color: var(--original-red-color);
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.logo-box span {
+    font-size: 18px;
+    color: var(--dark-red-color);
+    font-weight: 600;
+}
+
+.logo-box i {
+    font-size: 40px;
+    color: var(--original-red-color);
+    padding: 4px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.right .navigate {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.right .account {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.account #signup-btn {
+    color: var(--font-black-color);
+    background-color: var(--light-gray-color);
+}
+
+.account #signup-btn:hover {
+    background-color: var(--light-gray-hover-color);
+    transition: 0.3s;
+}
+
+.right .navigate a:hover {
+    text-decoration: underline;
+}
+
+.account #login-btn:hover {
+    background-color: var(--dark-red-color);
+    transition: 0.3s;
+}
+
