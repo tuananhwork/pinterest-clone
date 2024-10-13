@@ -252,6 +252,33 @@
                 width: 683px;
                 left: 0;
             }
+
+            img:nth-child(2) {
+                position: absolute;
+                height: 383px;
+                width: 215px;
+                left: 80px;
+                top: 115px;
+                border-radius: 15px;
+            }
+
+            img:nth-child(3) {
+                position: absolute;
+                height: 96px;
+                left: 40px;
+                top: 435px;
+                border-radius: 15px;
+            }
+
+            span {
+                color: #ffffff;
+                font-size: 15px;
+                font-weight: 500;
+                text-align: center;
+                position: absolute;
+                top: 500px;
+                left: 150px;
+            }
         }
 
         .section-text {

@@ -75,6 +75,7 @@ const Home = () => {
                     <img src="/images/shop/shop1.png" alt="" />
                     <img src="/images/shop/shop2.png" alt="" />
                     <img src="/images/shop/shop3.png" alt="" />
+                    <span>Scout the city <br /> 56.7k followers</span>
                 </div>
                 <div className="section-text">
                     <h1>See it, make it, try it, do it</h1>
