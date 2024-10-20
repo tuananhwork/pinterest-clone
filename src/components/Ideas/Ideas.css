@@ -1,0 +1,22 @@
+.body {
+    margin: 80px 80px 0 80px;
+}
+
+.explore {
+    h1 {
+        font-size: 18px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .item {
+            position: relative;
+
+            img {
+
+            }
+        }
+    }
+}
