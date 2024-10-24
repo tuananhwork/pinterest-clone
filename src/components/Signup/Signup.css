@@ -1,4 +1,6 @@
-#login-form {
+@import "./node_modules/boxicons/css/boxicons.min.css";
+
+#signup-form {
   z-index: 9999;
   position: relative;
   width: 484px;
@@ -10,6 +12,8 @@
   text-align: center;
   border-radius: 30px;
   background-color: #fff;
+  overflow-x: hidden;
+  overflow-y: scroll;
 
   i {
     font-size: 36px;
@@ -48,26 +52,6 @@
   button {
     width: 100%;
     margin: 5px 0;
-  }
-
-  #facebook-login {
-    background-color: rgb(34, 110, 252);
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    align-items: center;
-
-    i {
-      display: inline;
-      font-size: 24px;
-      color: #fff;
-    }
-  }
-
-  #google-login {
-    background-color: #fff;
-    border: solid 0.5px #e2e2e2;
-    color: #000;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -78,6 +62,12 @@
       font-size: 24px;
       color: #e60023;
     }
+  }
+
+  #google-login {
+    background-color: #fff;
+    border: solid 0.5px #e2e2e2;
+    color: #000;
   }
 
   p {
@@ -98,9 +88,21 @@
     font-weight: 600;
     padding-top: 6px;
   }
+
+  #create {
+    font-size: 16px;
+    color: #000;
+    background-color: #c2c2c2;
+    width: 484px;
+    height: 70px;
+    padding: 20px 120px 50px 120px;
+    margin-top: 20px;
+    margin-left: -90px;
+    margin-bottom: -50px;
+  }
 }
 
-#login-form::-webkit-scrollbar {
+#signup-form::-webkit-scrollbar {
   background-color: transparent;
   width: 0;
 }

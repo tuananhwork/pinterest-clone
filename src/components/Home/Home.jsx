@@ -2,11 +2,12 @@ import React from "react";
 import { Footer, Header } from "../Layout";
 import "reactjs-popup/dist/index.css";
 import "./Home.css";
+import Login from "../Login/Login";
 
 const Home = () => {
   return (
     <div>
-      <Header search={false} nav={true} logged={true} />
+      <Header search={false} nav={true} logged={false} />
       <div className="container">
         <section id="top">
           <h1 className="title">Get your next</h1>
@@ -28,8 +29,10 @@ const Home = () => {
         </section>
         <div className="work">
           <div className="gradient"></div>
-          <span>Here's how it works</span>
-          <div>i</div>
+          <span>
+            Here's how it works
+            <i className="bx bx-chevron-down"></i>
+          </span>
         </div>
         <section id="search">
           <div className="section-img">
@@ -38,7 +41,7 @@ const Home = () => {
             <img src="/images/search/search3.jpg" alt="" />
             <img src="/images/search/search4.jpg" alt="" />
             <div className="ecd">
-              <i>S</i>
+              <i className="bx bx-search"></i>
               <span>easy chicken dinner</span>
             </div>
           </div>
@@ -91,9 +94,16 @@ const Home = () => {
             <button>Explore</button>
           </div>
         </section>
-        <section id="bottom"></section>
+        <section id="bottom">
+          <div className="section-text">
+            <h1>Sign up to get your next idea</h1>
+          </div>
+          <div className="section-signup">
+            <Login />
+          </div>
+          <Footer />
+        </section>
       </div>
-      <Footer />
     </div>
   );
 };

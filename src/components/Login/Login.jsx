@@ -4,7 +4,7 @@ import "./Login.css";
 const Login = () => {
   return (
     <div id="login-form">
-      <i></i>
+      <i className="bx bxl-pinterest"></i>
       <h1>Welcome to Pinterest</h1>
       <div className="email-input">
         <label htmlFor="email">Email</label>
@@ -18,10 +18,12 @@ const Login = () => {
       <button>Login</button>
       <span>OR</span>
       <button id="facebook-login">
-        <i></i> Continue with Facebook
+        Continue with Facebook
+        <i class="bx bxl-facebook-circle"></i>
       </button>
       <button id="google-login">
-        <i></i> Continue with Google
+        Continue with Google
+        <i className="bx bxl-google"></i>
       </button>
       <p>
         By continuing, you agree to Pinterest's <a href="">Terms of Service</a>{" "}

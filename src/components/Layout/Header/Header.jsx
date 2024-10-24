@@ -3,6 +3,7 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 import Popup from "reactjs-popup";
 import Login from "../../Login/Login";
+import Signup from "../../Signup/Signup";
 
 const Header = ({ search = true, nav, logged = false }) => {
   return (
@@ -69,7 +70,15 @@ const Header = ({ search = true, nav, logged = false }) => {
                 trigger={<button id="signup-btn">Sign up</button>}
                 modal
                 nested
-              ></Popup>
+                style={{
+                  background: "transparent",
+                  width: "unset",
+                  padding: 0,
+                  border: "none",
+                }}
+              >
+                {(close) => <Signup />}
+              </Popup>
             </>
           )}
         </div>
