@@ -1,13 +1,12 @@
-import React from "react";
-import { Footer, Header } from "../Layout";
-import "reactjs-popup/dist/index.css";
-import "./Home.css";
-import Login from "../Login/Login";
+import { Footer, Header } from '../Layout';
+import 'reactjs-popup/dist/index.css';
+import './Home.css';
+import Login from '../Login/Login';
 
 const Home = () => {
   return (
     <div>
-      <Header search={false} nav={true} logged={false} />
+      <Header search={false} />
       <div className="container">
         <section id="top">
           <h1 className="title">Get your next</h1>
@@ -27,13 +26,6 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <div className="work">
-          <div className="gradient"></div>
-          <span>
-            Here's how it works
-            <i className="bx bx-chevron-down"></i>
-          </span>
-        </div>
         <section id="search">
           <div className="section-img">
             <img src="/images/search/search1.jpg" alt="" />
@@ -41,15 +33,15 @@ const Home = () => {
             <img src="/images/search/search3.jpg" alt="" />
             <img src="/images/search/search4.jpg" alt="" />
             <div className="ecd">
-              <i className="bx bx-search"></i>
+              <box-icon name="search"></box-icon>
               <span>easy chicken dinner</span>
             </div>
           </div>
           <div className="section-text">
             <h1>Search for an idea</h1>
             <p>
-              What do you want to try next? Think of something you’re into—like
-              “easy chicken dinner”—and see what you find.
+              What do you want to try next? Think of something you’re into—like “easy chicken dinner”—and see what you
+              find.
             </p>
             <button>Explore</button>
           </div>
@@ -62,14 +54,6 @@ const Home = () => {
           </div>
           <div className="section-img">
             <img src="/images/save/save1.jpg" alt="" />
-            {/* <div className="img-detail">
-                        <span>Fern future home vibes</span>
-                        <div className="img-detail-img">
-                            <img src="/images/save/save6.jpg" alt="" />
-                            <img src="/images/save/save7.jpg" alt="" />
-                            <img src="/images/save/save8.jpg" alt="" />
-                        </div>
-                    </div> */}
             <img src="/images/save/save2.jpg" alt="" />
             <img src="/images/save/save3.jpg" alt="" />
             <img src="/images/save/save4.jpg" alt="" />
@@ -78,32 +62,25 @@ const Home = () => {
         </section>
         <section id="shop">
           <div className="section-img">
-            <img src="/images/shop/shop1.png" alt="" />
-            <img src="/images/shop/shop2.png" alt="" />
-            <img src="/images/shop/shop3.png" alt="" />
-            <span>
-              Scout the city <br /> 56.7k followers
-            </span>
+            <img src="/images/shop/thumb.png" alt="" />
           </div>
           <div className="section-text">
             <h1>See it, make it, try it, do it</h1>
-            <p>
-              The best part of Pinterest is discovering new things and ideas
-              from people around the world.
-            </p>
+            <p>The best part of Pinterest is discovering new things and ideas from people around the world.</p>
             <button>Explore</button>
           </div>
         </section>
-        <section id="bottom">
+        <section id="account">
           <div className="section-text">
             <h1>Sign up to get your next idea</h1>
           </div>
           <div className="section-signup">
             <Login />
           </div>
-          <Footer />
         </section>
       </div>
+
+      <Footer />
     </div>
   );
 };
